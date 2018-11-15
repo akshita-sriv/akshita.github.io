@@ -4,6 +4,7 @@ body{
     background-size: cover;
     background-color: lightgreen;
     color: white;
+    overflow-x: hidden;
 }
 
 ul {
@@ -93,6 +94,8 @@ button:hover {
     overflow: auto; /* Enable scroll if needed */
     background-color: #474e5d;
     padding-top: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Modal Content/Box */
