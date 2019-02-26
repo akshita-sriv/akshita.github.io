@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/snfstyle1.css' %}" type="text/css" />
+</head>
+<body>
+<div class="text-block"><h1><b>The International School of Natural Farming</b></h1></div>
+
+<ul>
+  <li><a class="active" href="{% url 'register' %}">About Us</a></li>
+  <li><a href="#news">What's Natural Farming</a></li>
+  <li><a href="#contact">Why Go Natural Farming</a></li>
+  <li><a href="#about">Projects</a></li>
+  <li><a href="#about">Farmers Speak</a></li>
+  <li style="float: right;"><button onclick="document.getElementById('id01').style.display='block'" class="button">Login</button></li>
+</ul>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="" method="POST">
+  {% csrf_token %}
+    <div class="container">
+      <h2>Login</h2>
+      <hr>
+      <label for="email"><p>Email:</p></label><br>
+      <input type="text" style="color: black;" placeholder="Enter Email" name="email" required>
+      <br>
+      <br>
+      <label for="psw"><p>Password:</p></label><br>
+      <input type="password" style="color: black;" placeholder="Enter Password" name="psw" required>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button">Cancel</button>
+        <button type="submit" class="button">Login</button>
+        <button type="button" class="button"><a href="{% url 'register' %}">Register</a></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- <div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="" method="post">
+    <div class="container">
+      <form action="" method="post">
+      {% csrf_token %}
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" style="color: black;" placeholder="Enter Email" name="email" required><br>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" style="color: black;" placeholder="Enter Password" name="psw" required><br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label><br>
+    <input type="password" style="color: black;" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+   
+
+    <button  type="submit" class="button">Register</button>
+  </div>
+  
+</form>
+
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> -->
+
+<div class="row">
+<div class="col-sm-4">
+<p style="font-size: 30px; margin-top: 40%; width:100%;">There’s a healthier way to GROW
+with <b style="color: yellow;">'Natural Farming'</b></p>
+<p style="font-size: 15px"><i>Farming with Nature and without chemicals</i></p>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-8">
+  </div>
+  <div class="col-sm-4">
+    <table style="color: black;" cellspacing="10px">
+      <tr>
+        <td>
+          <h1>100</h1>
+          farmers to reach in Tumkur Dist, Karnataka for complete conversion from chemical to natural farming
+        </td>
+        <td>
+        <h1>500</h1>
+        farmers to reach as next level every six months
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1>2030</h1>
+          Cover India with all farm lands adopting natural farming
+        </td>
+        <td>
+          <h1>2040</h1>
+          Spread message worldwide
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
