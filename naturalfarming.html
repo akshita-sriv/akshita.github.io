@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  {% load static %}
+ <link rel="stylesheet" href="{% static 'css/snfstyle1.css' %}" type="text/css" />
+ <style type="text/css">
+   div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+ </style>
+</head>
+<body background="homepage.jpg">
+<div style="font-size: 60px; "><h1><b>The International School of Natural Farming</b></h1></div>
+
+<ul>
+  <li><a class="active" href="{% url 'index' %}"><img src="home.jpg"></a></li>
+  <li><a class="active" href="#about">About Us</a></li>
+  <li><a class="active" href="{% url 'naturalfarming' %}">What's Natural Farming</a></li>
+  <li><a class="active" href="{% url 'farmingbenefits' %}">Why Go Natural Farming</a></li>
+  <li><a href="#about">Projects</a></li>
+  <li><a href="#about">Farmers Speak</a></li>
+</ul>
+
+
+
+<div>
+<br>
+<br>
+<span style="font-family:'72 Bold', '72';font-weight:700; font-size:40px; color:black;"><div class="transbox">
+What is Natural Farming?</span>
+<br>
+<p style="font-family: '72'; font-weight: '400'; color: black; font-size: large;";>
+Natural Farming is a holistic alternative to the present-day agriculture model which is based on high-cost chemical inputs. It is very effective in addressing various present-day agricultural challenges. The most essential aspect of natural farming is to let nature play a dominant role to the maximum extent possible.
+<br>
+<br>
+<br>
+Agriculture is said to be the noble job of any nation and farmers, the food producers are relative referred as god. Mother earth as a superior body and genesis of all system due to her immense potential to give raise to all creatures. Man, now a days behave as superior being of the creation, due to his bad ideologies to make fast results, to achieve enhanced growth is exploiting mother earth. Depletion of all resources have been taken place especially from past 40 to 50 years. Excess use of fertilizers, pesticides, insecticides, fungicides, weedicides, use of heavy machineries and equipment to hasten Agriculture have created major irreversible damage on mother earth.
+<br>
+<br>
+<br>
+For centuries our ancestors had maintained organic matters in soil by following techniques like Crop Rotation, Relay Cropping, using compost manures and by growing Cover crops. However, these practices were highly neglected as we industrialized and have replaced with artificial-easily available fertilizers. HUMUS got depleted in a very shorter time destroying soil structure and have gradually lost the soil fertility. Thus, todays crops have become less nutrient, weak, and frequent prone to pests and diseases.
+<br>
+Soil and water are the basic resources of the country and must be conserved as careful as possible. The pressure of increasing population neutralizes all efforts made to raise the standard of Agriculture production. It is the top soil layer which sustains agriculture production and once this layer is lost or destroyed, nothing can ever replace it.
+<br>
+<br>
+<br>
+In other words, “Increase in Agriculture production are possible through modern methods, but these advanced techniques are useless, unless there are enough fertile lands for farming. If the soil on which all human life depends get destroyed, then the battel to free mankind from want cannot be won”.
+</p>
+</div>
+</div>
+</body>
+</html>
