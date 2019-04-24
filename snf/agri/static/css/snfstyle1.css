@@ -1,11 +1,12 @@
 body{
-     background-image: url("homepage.jpg");
-    background-position: center;
+    background-image: url("homepage.jpg");
+    background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: lightgreen;
     color: white;
     overflow-x: hidden;
+    overflow-y: hidden;
     
 }
 ul {
@@ -14,10 +15,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: darkgreen;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 h1{
   text-align: center;
+  font-size: 60px;
 }
 li {
     float: left;
@@ -143,14 +145,26 @@ hr {
        width: 100%;
     }
 }
+
+ div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
 .text-block {
-    position: relative;
-    background-color: white;
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    background: transparent;
     color: white;
     width: 100%;
-    text-align: center;
     height: 20%;
-    margin-top: 0%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
 }
